@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drei gleich große Spalten</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .column {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+    }
+    .column:nth-child(1) {
+      background-color: #ff9999; /* Beispielhintergrundfarbe */
+    }
+    .column:nth-child(2) {
+      background-color: #99ccff; /* Beispielhintergrundfarbe */
+    }
+    .column:nth-child(3) {
+      background-color: #99ff99; /* Beispielhintergrundfarbe */
+    }
+  </style>
+</head>
+<body>
+  <div class="column">
+    <p>Text in der ersten Spalte</p>
+  </div>
+  <div class="column">
+    <p>Text in der zweiten Spalte</p>
+  </div>
+  <div class="column">
+    <p>Text in der dritten Spalte</p>
+  </div>
+</body>
+</html>
